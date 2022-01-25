@@ -7,7 +7,8 @@ export const Navbar = () => {
         <div>
             <div className="header">
                 <nav>
-                <Link className="link" to="/">Inicio</Link>
+                <Link className="link" to="/">Listado</Link>
+                <Link className="link" to="/form">Estudiante</Link>
                 </nav>
             </div>
             <hr/>

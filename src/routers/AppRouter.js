@@ -5,6 +5,7 @@ import {BrowserRouter as Router,
     Navigate} 
     from 'react-router-dom';
 import { Form } from '../components/Form';
+import { List } from '../components/List';
 import { Navbar } from '../components/Navbar';
 
 export const AppRouter = () => {
@@ -13,7 +14,8 @@ export const AppRouter = () => {
             <Router>
             <Navbar/>
                 <Routes>
-                    <Route path="/" element={<Form/>}/>
+                    <Route path="/" element={<List/>}/>
+                    <Route path="/form" element={<Form/>}/>
                     <Route path="/*" element={<Navigate to="/"/>}/>
                 </Routes>
             </Router>

@@ -47,7 +47,6 @@ export const Form = () => {
                    <button id="btnRegistro">Enviar</button> 
                </div>
            </form>
-           <List/>
         </div>
     )
 }
