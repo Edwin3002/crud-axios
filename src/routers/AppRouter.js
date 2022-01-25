@@ -1,10 +1,10 @@
 import React from 'react'
 import {BrowserRouter as Router, 
     Routes,
-    Route} 
+    Route,
+    Navigate} 
     from 'react-router-dom';
 import { Form } from '../components/Form';
-import { List } from '../components/List';
 import { Navbar } from '../components/Navbar';
 
 export const AppRouter = () => {
@@ -13,8 +13,8 @@ export const AppRouter = () => {
             <Router>
             <Navbar/>
                 <Routes>
-                    <Route exact path="/Registro" element={<Form/>}/>
-                    <Route exact path="/Listar" element={<List/>}/>
+                    <Route path="/" element={<Form/>}/>
+                    <Route path="/*" element={<Navigate to="/"/>}/>
                 </Routes>
             </Router>
         </div>

@@ -1,9 +1,8 @@
 import React from 'react';
 import '../styles/Form.css';
+import { List } from './List';
 
 export const Form = () => {
-
-    
 
     return (
         <div>
@@ -48,6 +47,7 @@ export const Form = () => {
                    <button id="btnRegistro">Enviar</button> 
                </div>
            </form>
+           <List/>
         </div>
     )
 }
